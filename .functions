@@ -252,3 +252,10 @@ function gi() {
 	eval npm install --save-dev grunt-{"$*"}
 }
 
+source_dotfiles(){
+  cd $DEV/dotfiles
+	source bootstrap.sh --force
+  echo "Sourced dotfiles"
+}
+
+

@@ -96,5 +96,7 @@ if has("autocmd")
 endif
 execute pathogen#infect()
 filetype plugin on
-autocmd vimenter * if !argc() | NERDTree | endif
 map <C-n> :NERDTreeToggle<CR>
+autocmd vimenter * NERDTree
+map <Leader>n <plug>NERDTreeTabsToggle<CR>
+let g:nerdtree_tabs_open_on_console_startup=1

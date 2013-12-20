@@ -17,7 +17,7 @@ alias h="history"
 alias j="jobs"
 alias v="vim"
 alias m="mate ."
-alias s="g_source"
+alias s="source_dotfiles"
 alias o="open"
 alias n="cd ~/Dropbox/Reference/MyWiki/data"
 alias oo="open ."
@@ -139,7 +139,7 @@ command -v grunt > /dev/null && alias grunt="grunt --stack"
 
 # Stuff I never really use but cannot delete either because of http://xkcd.com/530/
 alias stfu="osascript -e 'set volume output muted true'"
-alias pumpitup="osascript -e 'set volume 7'"
+alias pumpitup="osascript -e 'set volume 3'"
 alias hax="growlnotify -a 'Activity Monitor' 'System error' -m 'WTF R U DOIN'"
 
 # Kill all the tabs in Chrome to free up memory
