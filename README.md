@@ -1,6 +1,6 @@
 # Luc’s dotfiles
 
-A fork of [Mathias Bynen's dotfiles |https://github.com/mathiasbynens/dotfiles]
+A fork of [Mathias Bynen's dotfiles](https://github.com/mathiasbynens/dotfiles).
 
 ## Installation
 
@@ -89,7 +89,7 @@ You could also install native apps with [`brew cask`](https://github.com/phinze/
 
 ## Author
 
-| [Luc Russell](http://lucrussell.com/) |
+[Luc Russell](http://lucrussell.com/)
 
 ## Thanks to…
 * Mathias Bynens [https://github.com/mathiasbynens/dotfiles]
