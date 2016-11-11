@@ -92,4 +92,5 @@ You could also install native apps with [`brew cask`](https://github.com/phinze/
 [Luc Russell](http://lucrussell.com/)
 
 ## Thanks to…
-* Mathias Bynens [https://github.com/mathiasbynens/dotfiles]
+* [Mathias Bynens](https://github.com/mathiasbynens/dotfiles)
+
