@@ -40,6 +40,13 @@ syntax on
 set cursorline
 " Make tabs as wide as two spaces
 set tabstop=2
+set shiftwidth=2
+set softtabstop=2
+" Make "tab" insert indents instead of tabs at the beginning of a line
+set smarttab
+" Always uses spaces instead of tab characters
+set expandtab
+
 " Show “invisible” characters
 " set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
 " set list
@@ -100,3 +107,12 @@ map <C-n> :NERDTreeToggle<CR>
 autocmd vimenter * NERDTree
 map <Leader>n <plug>NERDTreeTabsToggle<CR>
 let g:nerdtree_tabs_open_on_console_startup=1
+
+function! MySwitch()
+  if expand('#')=="" | silent! next
+  else
+    exe "normal! \<c-^>"
+  endif
+endfu
+map <C-^> :call MySwitch()<CR>
+

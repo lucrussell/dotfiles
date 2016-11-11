@@ -1,13 +1,9 @@
 # Add `~/bin` to the `$PATH`
 export PATH="$HOME/bin:$PATH"
-export DEV="$HOME/Dev"
-export GRAILS_HOME="/Users/lrussell/gg-springsource/grails-2.2.4"
-export GDRIVE="$HOME/GDrive" 
-export NOTES="$HOME/Dropbox/Reference/MyWiki/data"
-export PATH="$PATH:/Applications/AMPPS/mysql/bin/:$GRAILS_HOME/bin"
 
 
-# Load the shell dotfiles, and then some:
+export JAVA_HOME=$(/usr/libexec/java_home)
+ # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
 for file in ~/.{path,bash_prompt,exports,aliases,functions,extra}; do
@@ -44,4 +40,10 @@ complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes Syste
 # If possible, add tab completion for many more commands
 [ -f /etc/bash_completion ] && source /etc/bash_completion
 
+# Use pyenv for Python version management
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+pyenv virtualenvwrapper
 
