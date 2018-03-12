@@ -46,3 +46,5 @@ export PROJECT_HOME=$HOME/Dev
 source /usr/local/bin/virtualenvwrapper.sh
 pyenv virtualenvwrapper
 
+# Add node modules to path
+export PATH="$HOME/node_modules/.bin:$PATH"
